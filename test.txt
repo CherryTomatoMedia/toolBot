@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+<script async src="https://fundingchoicesmessages.google.com/i/pub-5145003750663899?ers=1" nonce="_eGJdWIOWaTTYQuDQANbPg"></script><script nonce="_eGJdWIOWaTTYQuDQANbPg">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+<script>(function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+            'use strict';var aa=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},ba="function"==typeof Object.create?Object.create:function(a){var b=function(){};b.prototype=a;return new b},k;if("function"==typeof Object.setPrototypeOf)k=Object.setPrototypeOf;else{var m;a:{var ca={a:!0},n={};try{n.__proto__=ca;m=n.a;break a}catch(a){}m=!1}k=m?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}
+            var p=k,q=function(a,b){a.prototype=ba(b.prototype);a.prototype.constructor=a;if(p)p(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c];a.v=b.prototype},r=this||self,da=function(){},t=function(a){return a};var u;var w=function(a,b){this.g=b===v?a:""};w.prototype.toString=function(){return this.g+""};var v={},x=function(a){if(void 0===u){var b=null;var c=r.trustedTypes;if(c&&c.createPolicy){try{b=c.createPolicy("goog#html",{createHTML:t,createScript:t,createScriptURL:t})}catch(d){r.console&&r.console.error(d.message)}u=b}else u=b}a=(b=u)?b.createScriptURL(a):a;return new w(a,v)};var A=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^Date.now()).toString(36)};var B={},C=null;var D="function"===typeof Uint8Array;function E(a,b,c){return"object"===typeof a?D&&!Array.isArray(a)&&a instanceof Uint8Array?c(a):F(a,b,c):b(a)}function F(a,b,c){if(Array.isArray(a)){for(var d=Array(a.length),e=0;e<a.length;e++){var f=a[e];null!=f&&(d[e]=E(f,b,c))}Array.isArray(a)&&a.s&&G(d);return d}d={};for(e in a)Object.prototype.hasOwnProperty.call(a,e)&&(f=a[e],null!=f&&(d[e]=E(f,b,c)));return d}
+            function ea(a){return F(a,function(b){return"number"===typeof b?isFinite(b)?b:String(b):b},function(b){var c;void 0===c&&(c=0);if(!C){C={};for(var d="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),e=["+/=","+/","-_=","-_.","-_"],f=0;5>f;f++){var h=d.concat(e[f].split(""));B[f]=h;for(var g=0;g<h.length;g++){var l=h[g];void 0===C[l]&&(C[l]=g)}}}c=B[c];d=Array(Math.floor(b.length/3));e=c[64]||"";for(f=h=0;h<b.length-2;h+=3){var y=b[h],z=b[h+1];l=b[h+2];g=c[y>>2];y=c[(y&3)<<
+            4|z>>4];z=c[(z&15)<<2|l>>6];l=c[l&63];d[f++]=""+g+y+z+l}g=0;l=e;switch(b.length-h){case 2:g=b[h+1],l=c[(g&15)<<2]||e;case 1:b=b[h],d[f]=""+c[b>>2]+c[(b&3)<<4|g>>4]+l+e}return d.join("")})}var fa={s:{value:!0,configurable:!0}},G=function(a){Array.isArray(a)&&!Object.isFrozen(a)&&Object.defineProperties(a,fa);return a};var H;var J=function(a,b,c){var d=H;H=null;a||(a=d);d=this.constructor.u;a||(a=d?[d]:[]);this.j=d?0:-1;this.h=null;this.g=a;a:{d=this.g.length;a=d-1;if(d&&(d=this.g[a],!(null===d||"object"!=typeof d||Array.isArray(d)||D&&d instanceof Uint8Array))){this.l=a-this.j;this.i=d;break a}void 0!==b&&-1<b?(this.l=Math.max(b,a+1-this.j),this.i=null):this.l=Number.MAX_VALUE}if(c)for(b=0;b<c.length;b++)a=c[b],a<this.l?(a+=this.j,(d=this.g[a])?G(d):this.g[a]=I):(d=this.l+this.j,this.g[d]||(this.i=this.g[d]={}),(d=this.i[a])?
+                G(d):this.i[a]=I)},I=Object.freeze(G([])),K=function(a,b){if(-1===b)return null;if(b<a.l){b+=a.j;var c=a.g[b];return c!==I?c:a.g[b]=G([])}if(a.i)return c=a.i[b],c!==I?c:a.i[b]=G([])},M=function(a,b){var c=L;if(-1===b)return null;a.h||(a.h={});if(!a.h[b]){var d=K(a,b);d&&(a.h[b]=new c(d))}return a.h[b]};J.prototype.toJSON=function(){var a=N(this,!1);return ea(a)};
+            var N=function(a,b){if(a.h)for(var c in a.h)if(Object.prototype.hasOwnProperty.call(a.h,c)){var d=a.h[c];if(Array.isArray(d))for(var e=0;e<d.length;e++)d[e]&&N(d[e],b);else d&&N(d,b)}return a.g},O=function(a,b){H=b=b?JSON.parse(b):null;a=new a(b);H=null;return a};J.prototype.toString=function(){return N(this,!1).toString()};var P=function(a){J.call(this,a)};q(P,J);function ha(a){var b,c=(a.ownerDocument&&a.ownerDocument.defaultView||window).document,d=null===(b=c.querySelector)||void 0===b?void 0:b.call(c,"script[nonce]");(b=d?d.nonce||d.getAttribute("nonce")||"":"")&&a.setAttribute("nonce",b)};var Q=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},R=function(a){this.g=a||r.document||document};R.prototype.appendChild=function(a,b){a.appendChild(b)};var S=function(a,b,c,d,e,f){try{var h=a.g,g=Q(a.g,"SCRIPT");g.async=!0;g.src=b instanceof w&&b.constructor===w?b.g:"type_error:TrustedResourceUrl";ha(g);h.head.appendChild(g);g.addEventListener("load",function(){e();d&&h.head.removeChild(g)});g.addEventListener("error",function(){0<c?S(a,b,c-1,d,e,f):(d&&h.head.removeChild(g),f())})}catch(l){f()}};var ia=r.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ja=r.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),ka=r.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),la=function(a,b,c){this.h=a;this.j=new R(this.h);this.g=null;this.i=[];this.l=!1;this.o=b;this.m=c},V=function(a){if(a.h.body&&!a.l){var b=
+                function(){T(a);r.setTimeout(function(){return U(a,3)},50)};S(a.j,a.o,2,!0,function(){r[a.m]||b()},b);a.l=!0}},T=function(a){for(var b=W(1,5),c=0;c<b;c++){var d=X(a);a.h.body.appendChild(d);a.i.push(d)}b=X(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=W(100,110).toString()+"%";b.style.zIndex=W(2147483544,2147483644).toString();b.style["background-color"]=ma(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=ma(0,10,0,10,0,10);b.style.display=
+                "flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=X(a);c.style.width=W(80,85).toString()+"%";c.style.maxWidth=W(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=Q(a.j.g,"IMG");d.className=A();d.src=ia;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=X(a),f=X(a);f.style["font-weight"]="bold";f.textContent=ja;var h=X(a);h.textContent=ka;Y(a,
+                e,f);Y(a,e,h);Y(a,c,d);Y(a,c,e);Y(a,b,c);a.g=b;a.h.body.appendChild(a.g);b=W(1,5);for(c=0;c<b;c++)d=X(a),a.h.body.appendChild(d),a.i.push(d)},Y=function(a,b,c){for(var d=W(1,5),e=0;e<d;e++){var f=X(a);b.appendChild(f)}b.appendChild(c);c=W(1,5);for(d=0;d<c;d++)e=X(a),b.appendChild(e)},W=function(a,b){return Math.floor(a+Math.random()*(b-a))},ma=function(a,b,c,d,e,f){return"rgb("+W(Math.max(a,0),Math.min(b,255)).toString()+","+W(Math.max(c,0),Math.min(d,255)).toString()+","+W(Math.max(e,0),Math.min(f,
+                255)).toString()+")"},X=function(a){a=Q(a.j.g,"DIV");a.className=A();return a},U=function(a,b){0>=b||null!=a.g&&0!=a.g.offsetHeight&&0!=a.g.offsetWidth||(na(a),T(a),r.setTimeout(function(){return U(a,b-1)},50))},na=function(a){var b=a.i;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:aa(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.i=[];(b=a.g)&&b.parentNode&&b.parentNode.removeChild(b);a.g=null};var pa=function(a,b,c,d,e){var f=oa(c),h=function(l){l.appendChild(f);r.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},g=function(l){document.body?h(document.body):0<l?r.setTimeout(function(){g(l-1)},e):b()};g(3)},oa=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var L=function(a){J.call(this,a)};q(L,J);var qa=function(a){J.call(this,a)};q(qa,J);var ra=function(a,b){this.l=a;this.m=new R(a.document);this.g=b;this.i=K(this.g,1);b=M(this.g,2);this.o=x(K(b,4)||"");this.h=!1;b=M(this.g,13);b=x(K(b,4)||"");this.j=new la(a.document,b,K(this.g,12))};ra.prototype.start=function(){sa(this)};
+            var sa=function(a){ta(a);S(a.m,a.o,3,!1,function(){a:{var b=a.i;var c=r.btoa(b);if(c=r[c]){try{var d=O(P,r.atob(c))}catch(e){b=!1;break a}b=b===K(d,1)}else b=!1}b?Z(a,K(a.g,14)):(Z(a,K(a.g,8)),V(a.j))},function(){pa(function(){Z(a,K(a.g,7));V(a.j)},function(){return Z(a,K(a.g,6))},K(a.g,9),K(a.g,10),K(a.g,11))})},Z=function(a,b){a.h||(a.h=!0,a=new a.l.XMLHttpRequest,a.open("GET",b,!0),a.send())},ta=function(a){var b=r.btoa(a.i);a.l[b]&&Z(a,K(a.g,5))};(function(a,b){r[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];r[a]=da;b.apply(null,d)}})("__h82AlnkH6D91__",function(a){"function"===typeof window.atob&&(new ra(window,O(qa,window.atob(a)))).start()});}).call(this);
+
+        window.__h82AlnkH6D91__("WyJwdWItNTE0NTAwMzc1MDY2Mzg5OSIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi01MTQ1MDAzNzUwNjYzODk5Il0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hYSFh5WGJUTHR2WkxKZFFTeHJPalE5VEhXV1hxTldyTk1BNmxWUkdYYlNqUXh5bHBFOFFId1pkem4xVXVvQ3ZJYTAzLUMyUl9XeFBJWUNwcmZtc3h2d2JnXHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFg4b2xyNWFjLVZsZk9ZT2FEQVFCelRNVVJYS3RNRGlleHdJZmFEMUhzWVpTTVI0dlB3RHZJLTZNREJ2U1piWW04WE9CakdfYVlfbDlNM3VJbC0wTFJIbmdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFVXeDZlR3ZfMEVZcDdBZHNreVI3bzlrdFduX3NTVUZ5Ykx1bDd6Sk9QVWdGT19BVnFaQjQ0TzE3ZXV6djVWd3ZZMExpUkNicmJJN25vZG50VHQ3b0lRWGdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFhEUk5iYWoxVGhwWDhHamZ0NjFxcV9pcmZPbjdJVVR0VVNTMkIxcDJRc2lpMC1sTFNlNFNPNkw1MjQtdkZycFljb2hSRDRoOGg0RHd3alJfeVdaUzJXX1FcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUVXhORFV3TURNM05UQTJOak00T1RrXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi01MTQ1MDAzNzUwNjYzODk5LmpzP3VzcXBcdTAwM2RDQWciXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4VmhvX2NhcGg0VzJSU2x0Wml0RW95a2F6LWR1WV90bjVDMEZWbURhUlBrcElpNGcxTGxMa3hTRTRMaE84TDh2M2xQS0tpSFdEZzMwdEhvU21NVUEzbGpKUVx1MDAzZFx1MDAzZCJd");</script>
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>抖音TikTok无水印下载 - 在线视频图集壁纸无水印下载解析 - 抖音无水印 - TikTok无水印 - 最新免费在线去水印解析 - Download Panda - DLPanda</title>
+<meta name="keywords" content="抖音,tiktok,无水印,抖音无水印,抖音去水印,图片无水印,壁纸无水印,抖音无水印下载,下载,在线解析,抖音去水印在线,最新抖音无水印">
+<meta name="description" content="视频在线解析下载 - DLPanda.com - 下载熊猫提供最新抖音在线无水印下载解析工具。无水印下载抖音Tiktok海外版视频">
+<meta name="referrer" content="never">
+
+<meta property="og:site_name" content="在线视频图集壁纸无水印下载解析 - 抖音无水印 - TikTok无水印 - 最新免费在线去水印解析"> 
+<meta property="og:site" content="https://dlpanda.com"> 
+<meta property="og:title" content="抖音TikTok无水印下载"> 
+<meta property="og:description" content="最新免费抖音TikTok在线去水印下载解析工具"> 
+<meta property="og:image" content="https://dlpanda.com/favicon.ico"> 
+<meta property="og:url" content="https://dlpanda.com"> 
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="抖音TikTok无水印下载">
+<meta name="twitter:description" content="最新免费抖音TikTok在线去水印下载解析工具">
+<meta name="twitter:image:src" content="https://dlpanda.com/images/DLPANDA-PREVIEW.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="https://dlpanda.com/favicon.ico">
+
+<link rel="icon" href="https://dlpanda.com/favicon.ico" type="image/png" sizes="64x64">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://dlpanda.com/css/main.css?t=18">
+<link rel="stylesheet" href="https://dlpanda.com/css/custom.css?t=28">
+<link rel="alternate" hreflang="x-default" href="https://dlpanda.com/">
+<link rel="alternate" hreflang="en" href="https://dlpanda.com/en">
+<link rel="alternate" hreflang="ja" href="https://dlpanda.com/ja">
+<link rel="alternate" hreflang="ko" href="https://dlpanda.com/ko">
+<link rel="alternate" hreflang="ms" href="https://dlpanda.com/ms">
+<link rel="alternate" hreflang="ru" href="https://dlpanda.com/ru">
+<link rel="alternate" hreflang="de" href="https://dlpanda.com/de">
+<link rel="alternate" hreflang="fr" href="https://dlpanda.com/fr">
+<link rel="alternate" hreflang="tl" href="https://dlpanda.com/tl">
+<link rel="alternate" hreflang="lo" href="https://dlpanda.com/lo">
+<link rel="alternate" hreflang="my" href="https://dlpanda.com/my">
+<link rel="alternate" hreflang="th" href="https://dlpanda.com/th">
+<link rel="alternate" hreflang="it" href="https://dlpanda.com/it">
+<link rel="alternate" hreflang="id" href="https://dlpanda.com/id">
+<link rel="alternate" hreflang="vi" href="https://dlpanda.com/vi">
+<link rel="alternate" hreflang="pt" href="https://dlpanda.com/pt">
+<link rel="alternate" hreflang="es" href="https://dlpanda.com/es">
+<link rel="alternate" hreflang="tr" href="https://dlpanda.com/tr">
+<link rel="alternate" hreflang="hi" href="https://dlpanda.com/hi">
+<link rel="alternate" hreflang="zh-CN" href="https://dlpanda.com/zh-CN">
+<link rel="alternate" hreflang="zh-HK" href="https://dlpanda.com/zh-HK">
+<style>
+        #adDLPanda {
+            background-color: transparent;
+            height: 1px; width: 1px;
+        }
+    </style>
+
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=64d9d849a49f2f0019453369&product=inline-share-buttons" async="async"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5145003750663899" crossorigin="anonymous"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQ96ZJ6QXK"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DQ96ZJ6QXK');
+    </script>
+<script async src="https://fundingchoicesmessages.google.com/i/pub-5145003750663899?ers=1" nonce="qQrb6lCqkdP5k4mNWyJYbA"></script><script nonce="qQrb6lCqkdP5k4mNWyJYbA">(function() {function signalGooglefcPresent() {if (!window.frames['googlefcPresent']) {if (document.body) {const iframe = document.createElement('iframe'); iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;'; iframe.style.display = 'none'; iframe.name = 'googlefcPresent'; document.body.appendChild(iframe);} else {setTimeout(signalGooglefcPresent, 0);}}}signalGooglefcPresent();})();</script>
+<script>(function(){/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+            'use strict';var aa=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}},ba="function"==typeof Object.create?Object.create:function(a){var b=function(){};b.prototype=a;return new b},k;if("function"==typeof Object.setPrototypeOf)k=Object.setPrototypeOf;else{var m;a:{var ca={a:!0},n={};try{n.__proto__=ca;m=n.a;break a}catch(a){}m=!1}k=m?function(a,b){a.__proto__=b;if(a.__proto__!==b)throw new TypeError(a+" is not extensible");return a}:null}
+            var p=k,q=function(a,b){a.prototype=ba(b.prototype);a.prototype.constructor=a;if(p)p(a,b);else for(var c in b)if("prototype"!=c)if(Object.defineProperties){var d=Object.getOwnPropertyDescriptor(b,c);d&&Object.defineProperty(a,c,d)}else a[c]=b[c];a.v=b.prototype},r=this||self,da=function(){},t=function(a){return a};var u;var w=function(a,b){this.g=b===v?a:""};w.prototype.toString=function(){return this.g+""};var v={},x=function(a){if(void 0===u){var b=null;var c=r.trustedTypes;if(c&&c.createPolicy){try{b=c.createPolicy("goog#html",{createHTML:t,createScript:t,createScriptURL:t})}catch(d){r.console&&r.console.error(d.message)}u=b}else u=b}a=(b=u)?b.createScriptURL(a):a;return new w(a,v)};var A=function(){return Math.floor(2147483648*Math.random()).toString(36)+Math.abs(Math.floor(2147483648*Math.random())^Date.now()).toString(36)};var B={},C=null;var D="function"===typeof Uint8Array;function E(a,b,c){return"object"===typeof a?D&&!Array.isArray(a)&&a instanceof Uint8Array?c(a):F(a,b,c):b(a)}function F(a,b,c){if(Array.isArray(a)){for(var d=Array(a.length),e=0;e<a.length;e++){var f=a[e];null!=f&&(d[e]=E(f,b,c))}Array.isArray(a)&&a.s&&G(d);return d}d={};for(e in a)Object.prototype.hasOwnProperty.call(a,e)&&(f=a[e],null!=f&&(d[e]=E(f,b,c)));return d}
+            function ea(a){return F(a,function(b){return"number"===typeof b?isFinite(b)?b:String(b):b},function(b){var c;void 0===c&&(c=0);if(!C){C={};for(var d="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789".split(""),e=["+/=","+/","-_=","-_.","-_"],f=0;5>f;f++){var h=d.concat(e[f].split(""));B[f]=h;for(var g=0;g<h.length;g++){var l=h[g];void 0===C[l]&&(C[l]=g)}}}c=B[c];d=Array(Math.floor(b.length/3));e=c[64]||"";for(f=h=0;h<b.length-2;h+=3){var y=b[h],z=b[h+1];l=b[h+2];g=c[y>>2];y=c[(y&3)<<
+            4|z>>4];z=c[(z&15)<<2|l>>6];l=c[l&63];d[f++]=""+g+y+z+l}g=0;l=e;switch(b.length-h){case 2:g=b[h+1],l=c[(g&15)<<2]||e;case 1:b=b[h],d[f]=""+c[b>>2]+c[(b&3)<<4|g>>4]+l+e}return d.join("")})}var fa={s:{value:!0,configurable:!0}},G=function(a){Array.isArray(a)&&!Object.isFrozen(a)&&Object.defineProperties(a,fa);return a};var H;var J=function(a,b,c){var d=H;H=null;a||(a=d);d=this.constructor.u;a||(a=d?[d]:[]);this.j=d?0:-1;this.h=null;this.g=a;a:{d=this.g.length;a=d-1;if(d&&(d=this.g[a],!(null===d||"object"!=typeof d||Array.isArray(d)||D&&d instanceof Uint8Array))){this.l=a-this.j;this.i=d;break a}void 0!==b&&-1<b?(this.l=Math.max(b,a+1-this.j),this.i=null):this.l=Number.MAX_VALUE}if(c)for(b=0;b<c.length;b++)a=c[b],a<this.l?(a+=this.j,(d=this.g[a])?G(d):this.g[a]=I):(d=this.l+this.j,this.g[d]||(this.i=this.g[d]={}),(d=this.i[a])?
+                G(d):this.i[a]=I)},I=Object.freeze(G([])),K=function(a,b){if(-1===b)return null;if(b<a.l){b+=a.j;var c=a.g[b];return c!==I?c:a.g[b]=G([])}if(a.i)return c=a.i[b],c!==I?c:a.i[b]=G([])},M=function(a,b){var c=L;if(-1===b)return null;a.h||(a.h={});if(!a.h[b]){var d=K(a,b);d&&(a.h[b]=new c(d))}return a.h[b]};J.prototype.toJSON=function(){var a=N(this,!1);return ea(a)};
+            var N=function(a,b){if(a.h)for(var c in a.h)if(Object.prototype.hasOwnProperty.call(a.h,c)){var d=a.h[c];if(Array.isArray(d))for(var e=0;e<d.length;e++)d[e]&&N(d[e],b);else d&&N(d,b)}return a.g},O=function(a,b){H=b=b?JSON.parse(b):null;a=new a(b);H=null;return a};J.prototype.toString=function(){return N(this,!1).toString()};var P=function(a){J.call(this,a)};q(P,J);function ha(a){var b,c=(a.ownerDocument&&a.ownerDocument.defaultView||window).document,d=null===(b=c.querySelector)||void 0===b?void 0:b.call(c,"script[nonce]");(b=d?d.nonce||d.getAttribute("nonce")||"":"")&&a.setAttribute("nonce",b)};var Q=function(a,b){b=String(b);"application/xhtml+xml"===a.contentType&&(b=b.toLowerCase());return a.createElement(b)},R=function(a){this.g=a||r.document||document};R.prototype.appendChild=function(a,b){a.appendChild(b)};var S=function(a,b,c,d,e,f){try{var h=a.g,g=Q(a.g,"SCRIPT");g.async=!0;g.src=b instanceof w&&b.constructor===w?b.g:"type_error:TrustedResourceUrl";ha(g);h.head.appendChild(g);g.addEventListener("load",function(){e();d&&h.head.removeChild(g)});g.addEventListener("error",function(){0<c?S(a,b,c-1,d,e,f):(d&&h.head.removeChild(g),f())})}catch(l){f()}};var ia=r.atob("aHR0cHM6Ly93d3cuZ3N0YXRpYy5jb20vaW1hZ2VzL2ljb25zL21hdGVyaWFsL3N5c3RlbS8xeC93YXJuaW5nX2FtYmVyXzI0ZHAucG5n"),ja=r.atob("WW91IGFyZSBzZWVpbmcgdGhpcyBtZXNzYWdlIGJlY2F1c2UgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlIGlzIGludGVyZmVyaW5nIHdpdGggdGhpcyBwYWdlLg=="),ka=r.atob("RGlzYWJsZSBhbnkgYWQgb3Igc2NyaXB0IGJsb2NraW5nIHNvZnR3YXJlLCB0aGVuIHJlbG9hZCB0aGlzIHBhZ2Uu"),la=function(a,b,c){this.h=a;this.j=new R(this.h);this.g=null;this.i=[];this.l=!1;this.o=b;this.m=c},V=function(a){if(a.h.body&&!a.l){var b=
+                function(){T(a);r.setTimeout(function(){return U(a,3)},50)};S(a.j,a.o,2,!0,function(){r[a.m]||b()},b);a.l=!0}},T=function(a){for(var b=W(1,5),c=0;c<b;c++){var d=X(a);a.h.body.appendChild(d);a.i.push(d)}b=X(a);b.style.bottom="0";b.style.left="0";b.style.position="fixed";b.style.width=W(100,110).toString()+"%";b.style.zIndex=W(2147483544,2147483644).toString();b.style["background-color"]=ma(249,259,242,252,219,229);b.style["box-shadow"]="0 0 12px #888";b.style.color=ma(0,10,0,10,0,10);b.style.display=
+                "flex";b.style["justify-content"]="center";b.style["font-family"]="Roboto, Arial";c=X(a);c.style.width=W(80,85).toString()+"%";c.style.maxWidth=W(750,775).toString()+"px";c.style.margin="24px";c.style.display="flex";c.style["align-items"]="flex-start";c.style["justify-content"]="center";d=Q(a.j.g,"IMG");d.className=A();d.src=ia;d.style.height="24px";d.style.width="24px";d.style["padding-right"]="16px";var e=X(a),f=X(a);f.style["font-weight"]="bold";f.textContent=ja;var h=X(a);h.textContent=ka;Y(a,
+                e,f);Y(a,e,h);Y(a,c,d);Y(a,c,e);Y(a,b,c);a.g=b;a.h.body.appendChild(a.g);b=W(1,5);for(c=0;c<b;c++)d=X(a),a.h.body.appendChild(d),a.i.push(d)},Y=function(a,b,c){for(var d=W(1,5),e=0;e<d;e++){var f=X(a);b.appendChild(f)}b.appendChild(c);c=W(1,5);for(d=0;d<c;d++)e=X(a),b.appendChild(e)},W=function(a,b){return Math.floor(a+Math.random()*(b-a))},ma=function(a,b,c,d,e,f){return"rgb("+W(Math.max(a,0),Math.min(b,255)).toString()+","+W(Math.max(c,0),Math.min(d,255)).toString()+","+W(Math.max(e,0),Math.min(f,
+                255)).toString()+")"},X=function(a){a=Q(a.j.g,"DIV");a.className=A();return a},U=function(a,b){0>=b||null!=a.g&&0!=a.g.offsetHeight&&0!=a.g.offsetWidth||(na(a),T(a),r.setTimeout(function(){return U(a,b-1)},50))},na=function(a){var b=a.i;var c="undefined"!=typeof Symbol&&Symbol.iterator&&b[Symbol.iterator];b=c?c.call(b):{next:aa(b)};for(c=b.next();!c.done;c=b.next())(c=c.value)&&c.parentNode&&c.parentNode.removeChild(c);a.i=[];(b=a.g)&&b.parentNode&&b.parentNode.removeChild(b);a.g=null};var pa=function(a,b,c,d,e){var f=oa(c),h=function(l){l.appendChild(f);r.setTimeout(function(){f?(0!==f.offsetHeight&&0!==f.offsetWidth?b():a(),f.parentNode&&f.parentNode.removeChild(f)):a()},d)},g=function(l){document.body?h(document.body):0<l?r.setTimeout(function(){g(l-1)},e):b()};g(3)},oa=function(a){var b=document.createElement("div");b.className=a;b.style.width="1px";b.style.height="1px";b.style.position="absolute";b.style.left="-10000px";b.style.top="-10000px";b.style.zIndex="-10000";return b};var L=function(a){J.call(this,a)};q(L,J);var qa=function(a){J.call(this,a)};q(qa,J);var ra=function(a,b){this.l=a;this.m=new R(a.document);this.g=b;this.i=K(this.g,1);b=M(this.g,2);this.o=x(K(b,4)||"");this.h=!1;b=M(this.g,13);b=x(K(b,4)||"");this.j=new la(a.document,b,K(this.g,12))};ra.prototype.start=function(){sa(this)};
+            var sa=function(a){ta(a);S(a.m,a.o,3,!1,function(){a:{var b=a.i;var c=r.btoa(b);if(c=r[c]){try{var d=O(P,r.atob(c))}catch(e){b=!1;break a}b=b===K(d,1)}else b=!1}b?Z(a,K(a.g,14)):(Z(a,K(a.g,8)),V(a.j))},function(){pa(function(){Z(a,K(a.g,7));V(a.j)},function(){return Z(a,K(a.g,6))},K(a.g,9),K(a.g,10),K(a.g,11))})},Z=function(a,b){a.h||(a.h=!0,a=new a.l.XMLHttpRequest,a.open("GET",b,!0),a.send())},ta=function(a){var b=r.btoa(a.i);a.l[b]&&Z(a,K(a.g,5))};(function(a,b){r[a]=function(c){for(var d=[],e=0;e<arguments.length;++e)d[e-0]=arguments[e];r[a]=da;b.apply(null,d)}})("__h82AlnkH6D91__",function(a){"function"===typeof window.atob&&(new ra(window,O(qa,window.atob(a)))).start()});}).call(this);
+
+        window.__h82AlnkH6D91__("WyJwdWItNTE0NTAwMzc1MDY2Mzg5OSIsW251bGwsbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9iL3B1Yi01MTQ1MDAzNzUwNjYzODk5Il0sbnVsbCxudWxsLCJodHRwczovL2Z1bmRpbmdjaG9pY2VzbWVzc2FnZXMuZ29vZ2xlLmNvbS9lbC9BR1NLV3hXaVItUGlUdENmQURVUzIyZ3BrLUpIZElubmlWVGFKRlhSLUNvblRWUTdFWHFlMWgxY1FGQmVYVFRndEdndHlxVEg5UHY1ekg0cVlXbnAyaW9aY0Z5NFR3XHUwMDNkXHUwMDNkP3RlXHUwMDNkVE9LRU5fRVhQT1NFRCIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFdBMkc5LXA2dGJ6N21OcDE1cFhYOEw5NG9ab1FBalp3WU1kMXA4V2g0ZVZJM0xoc01fLW02enM1azBZcjd6eUV0Y0plQm5tdUdPZENtdHA2YzhoVGpxc0FcdTAwM2RcdTAwM2Q/YWJcdTAwM2QxXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFVOSXdlRFJuZERNOHJhVUM1WjdWUlBveDFBVzQ5WmY3YWEtRnlyNDRBWWYzY2ktSDh6eWlUZ1dRRnpFNmFRbUlnREUycGwydGhuSkxleXVvZGNhRF9zTXdcdTAwM2RcdTAwM2Q/YWJcdTAwM2QyXHUwMDI2c2JmXHUwMDNkMSIsImh0dHBzOi8vZnVuZGluZ2Nob2ljZXNtZXNzYWdlcy5nb29nbGUuY29tL2VsL0FHU0tXeFZOSG1fYTA1TWxKWDJwT2d3NW1WZnhDVXRNYzZOd3A0VndTTWp1cUEzU0hfdi1RNXNqR1hHZEVDNWh2VktvUzdHX2NwUl9lcGVHaWxJM3RMMGxCZWlNOXdcdTAwM2RcdTAwM2Q/c2JmXHUwMDNkMiIsImRpdi1ncHQtYWQiLDIwLDEwMCwiY0hWaUxUVXhORFV3TURNM05UQTJOak00T1RrXHUwMDNkIixbbnVsbCxudWxsLG51bGwsImh0dHBzOi8vd3d3LmdzdGF0aWMuY29tLzBlbW4vZi9wL3B1Yi01MTQ1MDAzNzUwNjYzODk5LmpzP3VzcXBcdTAwM2RDQWciXSwiaHR0cHM6Ly9mdW5kaW5nY2hvaWNlc21lc3NhZ2VzLmdvb2dsZS5jb20vZWwvQUdTS1d4Vi1Xck9LMGN5eEo1RlBWTHM3N2RYS0ZPd1UwY3lHSVZqZGRlMU56alYtWDdzVmpzRnJXMTIzNVFZYXdUUGM2cE9xTmttQXNaZkFSMEJjRktHWlQtNjItZ1x1MDAzZFx1MDAzZCJd");</script>
+
+<script type="text/javascript" src="//cdn.vlitag.com/w/2e8130fe-e350-4041-b43f-3e2ba7907e4d.js" async defer></script><script>var vitag = vitag || {};vitag.gdprShowConsentToolButton = false;</script>
+<script type="text/javascript" src="//cdn.vlitag.com/ata/adv/2e8130fe-e350-4041-b43f-3e2ba7907e4d.js" async defer></script>
+
+</head>
+<body>
+<header id="header" class="header-main">
+<div id="logoAndNav" class="main-header-menu-wrap white-bg border-bottom">
+<div class="container">
+<nav class="js-mega-menu navbar navbar-expand-md header-nav">
+<a class="navbar-brand" href="/" style="padding-top: 0;padding-bottom: 0;"><img src="https://dlpanda.com/images/LOGO-LONG.png" width="200" alt="dlpanda.com" class="img-fluid"></a>
+
+<button type="button" class="navbar-toggler btn" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+<span id="hamburgerTrigger">
+<span class="fas fa-bars"></span>
+</span>
+</button>
+
+
+<div id="navBar" class="collapse navbar-collapse">
+<ul class="navbar-nav ml-auto main-navbar-nav">
+<li class="nav-item header-nav-last-item d-flex align-items-center">
+<strong class="text-primary">DL熊猫</strong>🐼
+</li>
+<li class="nav-item header-nav-last-item d-flex align-items-center">
+<a class="title-with-icon-link" href="https://dlpanda.com">
+<div class="media align-items-center">
+<i class="fas fa-music text-dark"></i>
+<div class="media-body pl-2">
+<span class="u-header__promo-title">TikTok 解析下载</span>
+</div>
+</div>
+</a>
+</li>
+<li class="nav-item hs-has-mega-menu custom-nav-item" data-max-width="280px" data-position="right">
+<a id="elementsMegaMenu" class="nav-link custom-nav-link main-link-toggle" href="javascript:void(0);" aria-haspopup="true" aria-expanded="false">Language</a>
+
+<div class="hs-mega-menu main-sub-menu u-header__mega-menu-position-right-fix--md" aria-labelledby="elementsMegaMenu" style="margin-top: -2px; height: unset; max-height: 450px;">
+<div class="mega-menu-wrap">
+<div class="row">
+<div class>
+<ul class="sub-menu-nav-group">
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="en" href="?lang=en">English</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="es" href="?lang=es">Español</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="de" href="?lang=de">Deutsch</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="ru" href="?lang=ru">Pусский</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="it" href="?lang=it">Italiano</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="ms" href="?lang=ms">Melayu</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="fr" href="?lang=fr">Français</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="tl" href="?lang=tl">Filipino</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="id" href="?lang=id">Indonesia</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="vi" href="?lang=vi">Tiếng Việt</a></li>
+</ul>
+</div>
+<div class>
+<ul class="sub-menu-nav-group">
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="pt" href="?lang=pt">Português</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="tr" href="?lang=tr">Türkçe</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="hi" href="?lang=hi">हिंदी</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="lo" href="?lang=lo">ພາສາລາວ</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="my" href="?lang=my">မြန်မာ</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="th" href="?lang=th">ไทย</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="ja" href="?lang=ja">日本語</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="ko" href="?lang=ko">한국어</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="zh-CN" href="?lang=zh-CN">简体中文</a></li>
+<li><a class="nav-link sub-menu-nav-link change-locale" data-locale="zh-HK" href="?lang=zh-HK">繁體中文</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+</li>
+<li class="nav-item header-nav-last-item d-flex align-items-center">
+<a class="title-with-icon-link" href="https://dlpanda.com/auth/login">
+<div class="media align-items-center">
+<i class="fas fa-user text-dark"></i>
+<div class="media-body pl-2">
+<span class="u-header__promo-title">登录</span>
+</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+
+</nav>
+</div>
+</div>
+</header>
+<main>
+<section class="domain-search-result-section gray-light-bg title-sec">
+<div class="container">
+<div class="col-lg-12" style="padding-bottom: 50px;">
+<div class="section-heading text-center mb-5 mb-sm-5 mb-md-5 mb-lg-5">
+<h2 class="h-title text-primary">抖音TikTok无水印下载</h2>
+<p id="sec" class="lead">最新免费抖音TikTok在线去水印下载解析工具</p>
+</div>
+<div class>
+<div class="hero mt-3 w-100 mx-auto">
+</div>
+<form action class="hero domain-search-form mt-3 w-100 mx-auto">
+<div class="input-group justify-content-center">
+<div class="position-relative hero-input">
+<input type="text" name="url" id="url" value class="form-control" placeholder="直接粘贴分享的内容（可以不用去除文字）" required>
+<input type="hidden" name="token" id="token" value="G7eRpMaa" class="form-control">
+<button id="pasteBtn" class="btn btn-paste" type="button"><i class="fa fa-paste mr-1"></i><span>粘贴</span></button>
+</div>
+<div class="input-group-append input-download">
+<button class="btn search-btn btn-hover align-items-center" type="submit">
+<i class="fas fa-download"></i><span class="pl-2">解析</span>
+</button>
+</div>
+</div>
+</form>
+<div class="pt-2">
+
+<div><script data-cfasync="false" async type="text/javascript" src="//tamedilks.com/tNSBdPXIwpLNj4HvI/62584"></script></div>
+
+</div>
+<hr>
+<div>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5145003750663899" crossorigin="anonymous"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5145003750663899" data-ad-slot="7853856557" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+</div>
+<div class="hero col-md-12 col-lg-12 pl-0 pr-0">
+<div class="single-popular-domain position-relative white-bg rounded shadow-sm p-3 mt-sm-4 mt-md-5 mt-lg-4">
+<div class="domain-info-wrap">
+<div class="card-body row">
+<video width="100%" controls="controls" style="max-height: 380px;">
+<source src="//v3-dy-o.zjcdn.com/efdc506ccff1813ed64668f0359c188f/654b00a9/video/tos/cn/tos-cn-ve-15c001-alinc2/ocEACRnVeJ8XOC5Mc9scAB4AybIIENQbglQfyD/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1345&amp;bt=1345&amp;cs=0&amp;ds=4&amp;ft=dqY4KGCi0071rEvjVQLAZu.7usYbh-Gmaglc&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ODo8ZWQ1NWhpOGc1M2VnPEBpM3Y2cWc6ZjhqbjMzNGkzM0BfMmNiNS1iNjUxMl9eXmI1YSNiZW1wcjRvLnBgLS1kLWFzcw%3D%3D&amp;btag=e00020000&amp;cc=1f&amp;dy_q=1699410528&amp;feature_id=46a7bb47b4fd1280f3d3825bf2b29388&amp;l=2023110810284816658316624F99869D5F" type="video/mp4">
+</video>
+<hr>
+</div>
+<div style="width: 100%;padding-top: 10px;padding-bottom: 20px;">
+<div class="sharethis-inline-share-buttons"></div>
+</div>
+</div>
+<div class="action-btns" style="text-align: right;">
+<button id="download-video-btn" type="button" class="btn primary-solid-btn mr-2" data-loading-text="下载中" onclick="showAd();">下载视频 <i class="fas fa-download"></i></button>
+<button id="download-music-btn" type="button" class="btn outline-btn" data-loading-text="下载中">下载音频 <i class="fas fa-music"></i></button>
+</div>
+<div class="text-right pt-3">
+<a class="btn primary-solid-btn mr-2" href="/download/v/4da5b1ea1e08b1ceb4c606a54d2c00cf" download="[DLPanda.com][如花一支花]7293861817699405110.mp4" target="_blank" onclick="showAd();">备用下载链接</a>
+</div>
+<div class="text-right pt-3"><a href="//v3-dy-o.zjcdn.com/efdc506ccff1813ed64668f0359c188f/654b00a9/video/tos/cn/tos-cn-ve-15c001-alinc2/ocEACRnVeJ8XOC5Mc9scAB4AybIIENQbglQfyD/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1345&amp;bt=1345&amp;cs=0&amp;ds=4&amp;ft=dqY4KGCi0071rEvjVQLAZu.7usYbh-Gmaglc&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ODo8ZWQ1NWhpOGc1M2VnPEBpM3Y2cWc6ZjhqbjMzNGkzM0BfMmNiNS1iNjUxMl9eXmI1YSNiZW1wcjRvLnBgLS1kLWFzcw%3D%3D&amp;btag=e00020000&amp;cc=1f&amp;dy_q=1699410528&amp;feature_id=46a7bb47b4fd1280f3d3825bf2b29388&amp;l=2023110810284816658316624F99869D5F" download="[DLPanda.com][如花一支花]7293861817699405110.mp4" target="_blank">备用下载链接 (2)</a></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="call-to-action ptb-40 gray-light-bg ">
+<div class="container">
+<div class="row">
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/xigua" class="text-danger">Xigua (New)</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com">TikTok</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/douyin">Douyin</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/instagram">Instagram</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/xiaohongshu">XiaoHongShu</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/bl">Bilibili</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/t">Twitter</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/reddit">Reddit</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/weibo">Weibo</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/vimeo">Vimeo</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/fb">Facebook</a></h6>
+</div>
+</div>
+<div class="col-6 col-sm-6 col-md-3 col-lg-3 mb-2 text-center">
+<div class="call-to-action-box white-bg shadow-sm rounded p-3">
+<h6><a href="https://dlpanda.com/snapchat">Snapchat</a></h6>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="feature-promo-seciton ptb-100 ">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-10 col-lg-10">
+<div class="section-heading text-center mb-5 mb-sm-5 mb-md-3 mb-lg-3">
+<h3>如何下载抖音TikTok无水印视频？</h3>
+</div>
+</div>
+</div>
+<div class="a-full" id="a-full" style="height: auto;">
+<div class="container">
+<div class="a-download-text hidden">
+<span class="mb-3">下载中...</span>
+<div class="margin-center" style="max-width: 420px;">
+<progress id="progressBar" class="progress" value="0" max="100"></progress>
+</div>
+</div>
+<div class="pt-2">
+
+<div class="adsbyvli" data-ad-slot="pw_17702"></div> <script type="text/javascript">(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display('pw_17702') })</script>
+
+</div>
+</div>
+<button class="modal-close hidden" aria-label="close" onclick="closeAd();">X</button>
+</div>
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<div class="single-service-plane text-center rounded white-bg shadow-sm p-5 mt-md-4 mt-lg-4">
+<div class="service-plane-content text-left">
+<p>1、打开抖音(TikTok)APP，或者网页douyin.com(tiktok.com)</p>
+<p>2、选择你需要下载的视频</p>
+<p>3、点击右下角的分享按钮（网页端直接复制网址链接）</p>
+<p>4、滑动到最右侧，点击“更多分享”按钮</p>
+<p>5、点击复制按钮</p>
+<p>6、然后返回我们“DL熊猫”工具，将复制的内容直接粘贴进输入框（可以不用手动清除里面的文字）</p>
+<p>7、点击解析按钮</p>
+<p>8、出现解析后的视频（或图片）点击相应的下载按钮即可（如果是图片的话则直接长按图片保存即可）</p>
+<p>tips:根据地区网速影响，点击下载按钮后需要数秒的时间（2 - 10 秒不等），请耐心等待</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="why-choose-us ptb-100 gray-light-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-9 col-lg-8">
+<div class="section-heading mb-5">
+<h2>为什么选择“DL熊猫”?</h2>
+<p class="lead">在线解析下载抖音无水印视频的极佳工具</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4 col-lg-4">
+<a href="javascript:void(0);">
+<div class="single-promo-2 custom-shadow single-promo-hover rounded-custom text-center white-bg p-5 h-100">
+<div class="circle-icon">
+<span class="fas fa-check text-white"></span>
+</div>
+<h5>方便使用</h5>
+<p>只需要视频链接，就能解析出原生纯正的无水印视频</p>
+</div>
+</a>
+</div>
+<div class="col-md-4 col-lg-4">
+<a href="javascript:void(0);">
+<div class="single-promo-2 custom-shadow single-promo-hover rounded-custom text-center white-bg p-5 h-100">
+<div class="circle-icon">
+<span class="fas fa-tachometer-alt text-white"></span>
+</div>
+<h5>快速稳定</h5>
+<p>多条解析线路，快速支持响应</p>
+</div>
+</a>
+</div>
+<div class="col-md-4 col-lg-4">
+<a href="javascript:void(0);">
+<div class="single-promo-2 custom-shadow single-promo-hover rounded-custom text-center white-bg p-5 h-100">
+<div class="circle-icon">
+<span class="fas fa-magnet text-white"></span>
+</div>
+<h5>免费使用</h5>
+<p>收藏本站，记住DLPanda.com，随时使用</p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section id="faq" class="ptb-100 white-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-9 col-lg-8">
+<div class="section-heading mb-5">
+<h2>常见问题</h2>
+<p></p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 col-lg-12">
+<div id="accordion-one" class="accordion accordion-faq">
+<div class="card mb-0">
+<a class="card-header" data-toggle="collapse" href="#collapseOne" aria-expanded="false">
+<h6 class="mb-0 d-inline-block">为什么会出现解析错误？</h6>
+</a>
+<div id="collapseOne" class="collapse show" data-parent="#accordion-one" style>
+<div class="card-body">
+<p>确保你需要下载的视频是公开的且未被删除，然后刷新浏览器（网页）重新解析看看。</p>
+</div>
+</div>
+</div>
+<div class="card mb-0">
+<a class="card-header" data-toggle="collapse" href="#collapseTwo" aria-expanded="false">
+<h6 class="mb-0 d-inline-block">为什么点击下载按钮后没有任何反应呢？</h6>
+</a>
+<div id="collapseTwo" class="collapse show" data-parent="#accordion-one" style>
+<div class="card-body">
+<p>
+如果点击下载后，长时间没有下载或其它反应，请试试点击“Download version 2”备用下载链接跳转至视频原文件下载。IOS用户可以长按“Download version 2”链接，选择下载其中内容即可。
+</p>
+</div>
+</div>
+</div>
+<div class="card mb-0">
+<a class="card-header" data-toggle="collapse" href="#collapseThree" aria-expanded="false">
+<h6 class="mb-0 d-inline-block">IOS下载的视频在哪？</h6>
+</a>
+<div id="collapseThree" class="collapse show" data-parent="#accordion-one" style>
+<div class="card-body">
+<p>
+完成下载后，下载的视频会保存到手机的“文件”里面（点击地址栏的↓按钮也能看到），打开下载的视频文件，点击分享，再点击保存到相册，即可在相册中查看。
+</p>
+</div>
+</div>
+</div>
+<div class="card mb-0">
+<a class="card-header" data-toggle="collapse" href="#collapseFour" aria-expanded="true">
+<h6 class="mb-0 d-inline-block">我需要支付费用来下载无水印的抖音TikTok视频吗？
+</h6>
+</a>
+<div id="collapseFour" class="collapse show" data-parent="#accordion-one" style>
+<div class="card-body">
+<p>
+不需要，我们是一款免费的在线应用，只需要收藏我们的网址，随时随地打开就能用，没有任何限制。为了网站的良好发展，请将我们网站加入广告拦截插件白名单，谢谢支持。
+</p>
+</div>
+</div>
+</div>
+<div class="card mb-0">
+<a class="card-header" data-toggle="collapse" href="#collapseFour" aria-expanded="true">
+<h6 class="mb-0 d-inline-block">你们支持解析下载哪些格式的链接？
+</h6>
+</a>
+<div id="collapseFour" class="collapse show" data-parent="#accordion-one" style>
+<div class="card-body">
+<p>
+我们支持以下格式：
+</p>
+<ul>
+<li>https://vm.tiktok.com/ZMLp2UG/</li>
+<li>https://v.douyin.com/8Tdgeu/</li>
+<li>https://www.tiktok.com/@xx/video/680586780545</li>
+<li>https://m.tiktok.com/v/680586780545.html</li>
+<li>https://www.douyin.com/video/705187728920004</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="our-blog-section ptb-100 gray-light-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="section-heading mb-5">
+<h2><a href="/article">文章</a></h2>
+<a href="/article" class>
+查看更多 <span class="ti-arrow-right"></span>
+</a>
+</div>
+</div>
+</div>
+<div class>
+<article class="post">
+<div class="post-preview" style="max-height: 260px; overflow: hidden;">
+<a href="/article/nvidia-recording-does-not-work">
+<img src="https://dlpanda.com/storage/images/01215756.png" alt="blog">
+</a>
+</div>
+<div class="post-wrapper">
+<div class="post-header">
+<h2 class="post-title">
+<a href="/article/nvidia-recording-does-not-work">
+Nvidia recording does not work, nvidia alt z not working
+</a>
+</h2>
+<ul class="post-meta">
+<li>2023-07-01 21:58:29</li>
+</ul>
+</div>
+<div class="post-content">
+<p>How to do when Nvidia recording not work</p>
+</div>
+<div class="post-more pt-4 align-items-center d-flex">
+<a href="/article/nvidia-recording-does-not-work" class="btn primary-solid-btn">
+查看更多 <span class="ti-arrow-right"></span>
+</a>
+</div>
+</div>
+</article>
+<article class="post">
+<div class="post-preview" style="max-height: 260px; overflow: hidden;">
+<a href="/article/how-to-find-xiaohongshu-cookie-web_session">
+<img src="https://dlpanda.com/storage/images/x-banner1.png" alt="blog">
+</a>
+</div>
+<div class="post-wrapper">
+<div class="post-header">
+<h2 class="post-title">
+<a href="/article/how-to-find-xiaohongshu-cookie-web_session">
+How to find xiaohongshu cookie &quot;web_session&quot;?
+</a>
+</h2>
+<ul class="post-meta">
+<li>2023-06-15 23:31:03</li>
+</ul>
+</div>
+<div class="post-content">
+<p>Sometimes due to the limitations of xiaohongshu, we need to use xiaohongshu&#039;s cookies to get the original image without watermark.
+So let&#039;s take a look at how to view this value on your computer browser.</p>
+</div>
+<div class="post-more pt-4 align-items-center d-flex">
+<a href="/article/how-to-find-xiaohongshu-cookie-web_session" class="btn primary-solid-btn">
+查看更多 <span class="ti-arrow-right"></span>
+</a>
+</div>
+</div>
+</article>
+<article class="post">
+<div class="post-preview" style="max-height: 260px; overflow: hidden;">
+<a href="/article/how-to-download-bilibili-videos-use-referer-download-ko">
+<img src="https://dlpanda.com/storage/images/referer-download.png" alt="blog">
+</a>
+</div>
+<div class="post-wrapper">
+<div class="post-header">
+<h2 class="post-title">
+<a href="/article/how-to-download-bilibili-videos-use-referer-download-ko">
+DLPanda 추천인 다운로드 도구를 사용하여 빌리 빌리 비디오를 다운로드하는 방법은 무엇입니까?
+</a>
+</h2>
+<ul class="post-meta">
+<li>2023-05-28 17:30:16</li>
+</ul>
+</div>
+<div class="post-content">
+<p>빌리빌리 동영상이 제대로 다운로드되지 않는 경우, RefererDownload.exe...</p>
+</div>
+<div class="post-more pt-4 align-items-center d-flex">
+<a href="/article/how-to-download-bilibili-videos-use-referer-download-ko" class="btn primary-solid-btn">
+查看更多 <span class="ti-arrow-right"></span>
+</a>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+</main>
+<div id="alertModal" class="modal">
+<div class="modal-content">
+<div class="card">
+<div class="card-body">
+<span class="close">&times;</span>
+<p id="alertMessage"></p>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer-section">
+
+<div class="footer-top gradient-bg">
+<div class="container">
+<div class="row">
+<div class="col-md-2">
+<div class="row footer-top-wrap">
+<div class="col-12">
+<div class="footer-nav-wrap text-white">
+<div class="footer-logo mb-25">
+<a href="javascript:void(0);"><img src="https://dlpanda.com/images/LOGO.png" alt="dlpanda.com" style="height: 70px;"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-10">
+<div class="row footer-top-wrap">
+<div class="col-md-3 col-sm-6">
+<div class="footer-nav-wrap text-white">
+<h4 class="text-white">其他工具</h4>
+<ul class="nav flex-column">
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com" target="_blank">TikTok Video Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/tiktok-picture" target="_blank">TikTok Picture Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/tiktok-panorama" target="_blank">TikTok Panorama Picture Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/douyin" target="_blank">Douyin Video/Picture Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/instagram" target="_blank">Instagram Video/Picture Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/t" target="_blank">Twitter Video/Picture Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/xiaohongshu" target="_blank">XiaoHongShu Picture Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/bl" target="_blank">Bilibili Video Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/vimeo" target="_blank">Vimeo Video Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/weibo" target="_blank">Sina Weibo Video/Photo Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/snapchat" target="_blank">Snapchat Video/Spotlight Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/fb" target="_blank">Facebook Video/Reel Downloader</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://dlpanda.com/xigua" target="_blank">iXigua Video Downloader</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-3 col-sm-6">
+<div class="footer-nav-wrap text-white">
+<h4 class="text-white">链接</h4>
+<ul class="nav flex-column">
+<li class="nav-item">
+<a class="nav-link" href="/cdn-cgi/l/email-protection#b0d4dfc0c5d2dfc8f0dfc5c4dcdfdfdb9ed3dfdd" target="_blank"><span class="__cf_email__" data-cfemail="b0d4dfc0c5d2dfc8f0dfc5c4dcdfdfdb9ed3dfdd">[email&#160;protected]</span></a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/article">文章</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/static/terms-of-service">服务条款</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="/static/coffee">请喝咖啡</a>
+</li>
+<hr style="width: 100%;">
+<li class="nav-item">
+<a class="nav-link" href="//dopubox.com?ref=dlpanda" target="_blank">DopuBox 工具</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-md-6 col-sm-6">
+<div class="footer-nav-wrap text-white">
+<h4 class="text-white">Language（语言）</h4>
+<div class="row">
+<ul class="nav flex-column col-lg-3 col-md-6 col-sm-6 pl-3" style="width: initial;">
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="en" href="?lang=en">English</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="de" href="?lang=de">Deutsch</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="ms" href="?lang=ms">Melayu</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="it" href="?lang=it">Italiano</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="pt" href="?lang=pt">Português</a>
+</li>
+</ul>
+<ul class="nav flex-column col-lg-3 col-md-6 col-sm-6 pl-3" style="width: initial;">
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="ru" href="?lang=ru">Pусский</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="hi" href="?lang=hi">हिंदी</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="lo" href="?lang=lo">ພາສາລາວ</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="my" href="?lang=my">မြန်မာ</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="th" href="?lang=th">ไทย</a>
+</li>
+</ul>
+<ul class="nav flex-column col-lg-3 col-md-6 col-sm-6 pl-3" style="width: initial;">
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="fr" href="?lang=fr">Français</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="tl" href="?lang=tl">Filipino</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="id" href="?lang=id">Indonesia</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="vi" href="?lang=vi">Tiếng Việt</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="vi" href="?lang=es">Español</a>
+</li>
+</ul>
+<ul class="nav flex-column col-lg-3 col-md-6 col-sm-6 pl-3" style="width: initial;">
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="tr" href="?lang=tr">Türkçe</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="ja" href="?lang=ja">日本語</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="ko" href="?lang=ko">한국어</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="zh-CN" href="?lang=zh-CN">简体中文</a>
+</li>
+<li class="nav-item">
+<a class="nav-link change-locale" data-locale="zh-HK" href="?lang=zh-HK">繁體中文</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer-bottom gray-light-bg py-3">
+<div class="container">
+<div class="row align-items-center justify-content-between">
+<div class="col-md-5 col-lg-5">
+<p class="copyright-text pb-0 mb-0">Copyrights © <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script>.
+All rights reserved by
+<a href="https://dlpanda.com">DownLoadPanda</a>
+</p>
+</div>
+<div class="col-md-7 col-lg-6">
+</div>
+</div>
+</div>
+</div>
+</footer>
+<button class="scroll-top scroll-to-target" data-target="html">
+<span class="ti-rocket"></span>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<script src="https://dlpanda.com/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-slider@10.6.2/dist/bootstrap-slider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.3/jquery.easing.1.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/validator@10.11.0/validator.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-waypoints@2.0.5/waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+<script src="https://dlpanda.com/js/magnific-popup.min.js"></script>
+<script src="https://dlpanda.com/js/hs.megamenu.js"></script>
+<script src="https://dlpanda.com/js/app.js"></script>
+<script>
+        $("#download-video-btn").on('click', function () {
+            $(this).text('下载中...').attr('disabled', 'disabled');
+            let btn = $(this);
+            setTimeout(function () {
+                btn.text('下载视频').removeAttr('disabled');
+            }, 30000);
+            downVideo('//v3-dy-o.zjcdn.com/efdc506ccff1813ed64668f0359c188f/654b00a9/video/tos/cn/tos-cn-ve-15c001-alinc2/ocEACRnVeJ8XOC5Mc9scAB4AybIIENQbglQfyD/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1345&amp;bt=1345&amp;cs=0&amp;ds=4&amp;ft=dqY4KGCi0071rEvjVQLAZu.7usYbh-Gmaglc&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ODo8ZWQ1NWhpOGc1M2VnPEBpM3Y2cWc6ZjhqbjMzNGkzM0BfMmNiNS1iNjUxMl9eXmI1YSNiZW1wcjRvLnBgLS1kLWFzcw%3D%3D&amp;btag=e00020000&amp;cc=1f&amp;dy_q=1699410528&amp;feature_id=46a7bb47b4fd1280f3d3825bf2b29388&amp;l=2023110810284816658316624F99869D5F', '[DLPanda.com][如花一支花]7293861817699405110.mp4');
+        });
+        $("#download-music-btn").on('click', function () {
+            $(this).text('下载中...').attr('disabled', 'disabled');
+            let btn = $(this);
+            setTimeout(function () {
+                btn.text('下载音频').removeAttr('disabled');
+            }, 30000);
+            downVideo('https://sf3-cdn-tos.douyinstatic.com/obj/ies-music/7293861884059044645.mp3', '[DLPanda.com]7293861886479223602.mp3');
+        });
+
+        function downVideo (url, name){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.responseType = 'blob';
+            xhr.onprogress = function(e) {
+                if (e.lengthComputable) {
+                    const percentage = (e.loaded / e.total) * 100;
+                    const progressBar = document.getElementById('progressBar');
+                    progressBar.value = percentage;
+                }
+            };
+            xhr.onload = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    let blob = this.response;
+                    let u = window.URL.createObjectURL(new Blob([blob]));
+                    let a = document.createElement('a');
+                    a.download = name;
+                    a.href = u;
+                    a.style.display = 'none';
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                }
+            };
+            xhr.send();
+        }
+    </script>
+<script>
+        function showAd() {
+            let adFull = $("#a-full");
+            let modalClose = $(".modal-close");
+            let downloadText = $(".a-download-text");
+            adFull.addClass("active");
+            adFull.removeClass("hidden");
+            modalClose.removeClass("hidden");
+            downloadText.removeClass("hidden");
+            document.getElementById("a-full").style.height = "-webkit-fill-available";
+        }
+        function closeAd() {
+            let adFull = $("#a-full");
+            adFull.removeClass('active');
+            adFull.addClass('hidden');
+        }
+        let modal = document.getElementById("a-full");
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.classList.remove('active');
+                document.getElementById("a-full").style.height = "auto";
+            }
+        }
+    </script>
+<script>
+    $(function () {
+        let current_locale = 'zh-CN';
+        $.cookie('current_locale', current_locale, { expires: 30, path: '/' });
+        $.cookie('current_locale', current_locale, { expires: 30, path: '/article' });
+    });
+
+    $(".change-locale").on('click', function () {
+        let locale = $(this).attr('data-locale');
+        $.cookie('current_locale', locale, { expires: 30, path: '/' });
+        $.cookie('current_locale', locale, { expires: 30, path: '/article' });
+    });
+</script>
+<script>
+    /*window.addEventListener("load", () => {
+        let alertTXT = "We detect that you may be using AdBlock or Adblock Plus.\nYou can set special rules or whitelist DLPanda so that we can develop better and continue to provide you with a quality service.";
+        let adblockEnabled = false;
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js', false);
+        xhr.onerror = function() {
+                adblockEnabled = true;
+                console.log('The request was blocked by the client');
+        };
+        try {
+            xhr.send();
+        }
+        catch (e) {
+            console.log(e);
+            alert(alertTXT);
+
+            return;
+        }
+
+        if (xhr.status === 404 || xhr.responseText.indexOf('blocked') !== -1) {
+            adblockEnabled = true;
+        }
+        if(adblockEnabled) {
+            alert(alertTXT);
+        }
+    });*/
+
+    $(document).ready(function() {
+        $("#pasteBtn").click(function() {
+            $("#url").val("");
+
+            if (navigator.clipboard) {
+                navigator.clipboard.readText().then(function(content) {
+                    $("#url").val(content);
+                }).catch(function(error) {
+                    console.error('Failed to read clipboard: ', error);
+                });
+            } else {
+                console.error('Clipboard API not supported.');
+            }
+        });
+
+        var modal = $("#alertModal");
+
+        $(".close").click(function() {
+            modal.css("display", "none");
+        });
+
+        $(window).click(function(event) {
+            if (event.target == modal[0]) {
+                modal.css("display", "none");
+            }
+        });
+    });
+</script>
+<script>
+    function downloadFile(url, fileName)
+    {
+        showAd();
+        var xhr = new XMLHttpRequest();
+        url = url.replace('http://', 'https://');
+        xhr.open("GET", url, true);
+        xhr.responseType = 'blob';
+        xhr.onprogress = function(e) {
+            if (e.lengthComputable) {
+                const percentage = (e.loaded / e.total) * 100;
+                const progressBar = document.getElementById('progressBar');
+                progressBar.value = percentage;
+            }
+        };
+        xhr.onload=function(e) {
+            var url = window.URL.createObjectURL(xhr.response)
+            var a = document.createElement('a');
+            a.href = url
+            a.download = fileName;
+            a.click()
+        }
+        xhr.send();
+    }
+
+    function msgAlert(msg)
+    {
+        var modal = $("#alertModal");
+        var aMsg = $("#alertMessage");
+        aMsg.text(msg);
+        modal.css("display", "block");
+    }
+</script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'822a626dfa270ffb',t:'MTY5OTQxMDUyOC45OTIwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
