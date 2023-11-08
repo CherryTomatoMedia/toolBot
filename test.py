@@ -32,7 +32,7 @@ async def main():
     cookie = resp['cookie']
 
     # 第二步：URL编码中文
-    raw = "1.74 复制打开抖音，看看【美食 可能有关】# 减脂餐 一口没吃 有点饿# 减脂餐  https://v.douyin.com/iR2euxso/ C@h.oD Uyt:/ 10/22 "
+    raw = "8.74  https://v.douyin.com/iR2K4yGf/ 复制打开抖音，看看# 哈利波特 # 推荐电影 霍格沃茨永远对相信魔法的孩子敞开大门# 哈利波特 # 推荐电影   P@K.jp tEH:/ 11/06"
     encoded_string = urllib.parse.quote(raw)
 
     # 第三步：

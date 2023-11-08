@@ -242,7 +242,7 @@
 <div class="domain-info-wrap">
 <div class="card-body row">
 <video width="100%" controls="controls" style="max-height: 380px;">
-<source src="//v3-dy-o.zjcdn.com/efdc506ccff1813ed64668f0359c188f/654b00a9/video/tos/cn/tos-cn-ve-15c001-alinc2/ocEACRnVeJ8XOC5Mc9scAB4AybIIENQbglQfyD/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1345&amp;bt=1345&amp;cs=0&amp;ds=4&amp;ft=dqY4KGCi0071rEvjVQLAZu.7usYbh-Gmaglc&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ODo8ZWQ1NWhpOGc1M2VnPEBpM3Y2cWc6ZjhqbjMzNGkzM0BfMmNiNS1iNjUxMl9eXmI1YSNiZW1wcjRvLnBgLS1kLWFzcw%3D%3D&amp;btag=e00020000&amp;cc=1f&amp;dy_q=1699410528&amp;feature_id=46a7bb47b4fd1280f3d3825bf2b29388&amp;l=2023110810284816658316624F99869D5F" type="video/mp4">
+<source src="//v26-web.douyinvod.com/7de621a35fff4b5423c062f24433071d/654bad25/video/tos/cn/tos-cn-ve-15c001-alinc2/7bd7faaa22cf44b6bb46f41e92272297/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1140&amp;bt=1140&amp;cs=0&amp;ds=4&amp;ft=.6JO5.yygZmo0P3bvVwkVQHkfOYHKJd.&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ZWdlZmk5ZGlkPDU5NDs3O0BpM3EzOzM6Zmg4PDMzNGkzM0BfNDEyNi9fXzYxYl5fNF8vYSMyaC9scjRvLTZgLS1kLS9zcw%3D%3D&amp;btag=e00018000&amp;dy_q=1699454708&amp;l=20231108224508E26B1B2E748B031FD9F6" type="video/mp4">
 </video>
 <hr>
 </div>
@@ -255,9 +255,9 @@
 <button id="download-music-btn" type="button" class="btn outline-btn" data-loading-text="下载中">下载音频 <i class="fas fa-music"></i></button>
 </div>
 <div class="text-right pt-3">
-<a class="btn primary-solid-btn mr-2" href="/download/v/4da5b1ea1e08b1ceb4c606a54d2c00cf" download="[DLPanda.com][如花一支花]7293861817699405110.mp4" target="_blank" onclick="showAd();">备用下载链接</a>
+<a class="btn primary-solid-btn mr-2" href="/download/v/547f93de7874f3ed099c73200ef70695" download="[DLPanda.com][小杰（影视混剪）]7084815753421098247.mp4" target="_blank" onclick="showAd();">备用下载链接</a>
 </div>
-<div class="text-right pt-3"><a href="//v3-dy-o.zjcdn.com/efdc506ccff1813ed64668f0359c188f/654b00a9/video/tos/cn/tos-cn-ve-15c001-alinc2/ocEACRnVeJ8XOC5Mc9scAB4AybIIENQbglQfyD/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1345&amp;bt=1345&amp;cs=0&amp;ds=4&amp;ft=dqY4KGCi0071rEvjVQLAZu.7usYbh-Gmaglc&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ODo8ZWQ1NWhpOGc1M2VnPEBpM3Y2cWc6ZjhqbjMzNGkzM0BfMmNiNS1iNjUxMl9eXmI1YSNiZW1wcjRvLnBgLS1kLWFzcw%3D%3D&amp;btag=e00020000&amp;cc=1f&amp;dy_q=1699410528&amp;feature_id=46a7bb47b4fd1280f3d3825bf2b29388&amp;l=2023110810284816658316624F99869D5F" download="[DLPanda.com][如花一支花]7293861817699405110.mp4" target="_blank">备用下载链接 (2)</a></div>
+<div class="text-right pt-3"><a href="//v26-web.douyinvod.com/7de621a35fff4b5423c062f24433071d/654bad25/video/tos/cn/tos-cn-ve-15c001-alinc2/7bd7faaa22cf44b6bb46f41e92272297/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1140&amp;bt=1140&amp;cs=0&amp;ds=4&amp;ft=.6JO5.yygZmo0P3bvVwkVQHkfOYHKJd.&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ZWdlZmk5ZGlkPDU5NDs3O0BpM3EzOzM6Zmg4PDMzNGkzM0BfNDEyNi9fXzYxYl5fNF8vYSMyaC9scjRvLTZgLS1kLS9zcw%3D%3D&amp;btag=e00018000&amp;dy_q=1699454708&amp;l=20231108224508E26B1B2E748B031FD9F6" download="[DLPanda.com][小杰（影视混剪）]7084815753421098247.mp4" target="_blank">备用下载链接 (2)</a></div>
 </div>
 </div>
 </div>
@@ -684,7 +684,7 @@ DLPanda 추천인 다운로드 도구를 사용하여 빌리 빌리 비디오를
 <h4 class="text-white">链接</h4>
 <ul class="nav flex-column">
 <li class="nav-item">
-<a class="nav-link" href="/cdn-cgi/l/email-protection#b0d4dfc0c5d2dfc8f0dfc5c4dcdfdfdb9ed3dfdd" target="_blank"><span class="__cf_email__" data-cfemail="b0d4dfc0c5d2dfc8f0dfc5c4dcdfdfdb9ed3dfdd">[email&#160;protected]</span></a>
+<a class="nav-link" href="/cdn-cgi/l/email-protection#95f1fae5e0f7faedd5fae0e1f9fafafebbf6faf8" target="_blank"><span class="__cf_email__" data-cfemail="177378676275786f577862637b78787c3974787a">[email&#160;protected]</span></a>
 </li>
 <li class="nav-item">
 <a class="nav-link" href="/article">文章</a>
@@ -819,7 +819,7 @@ All rights reserved by
             setTimeout(function () {
                 btn.text('下载视频').removeAttr('disabled');
             }, 30000);
-            downVideo('//v3-dy-o.zjcdn.com/efdc506ccff1813ed64668f0359c188f/654b00a9/video/tos/cn/tos-cn-ve-15c001-alinc2/ocEACRnVeJ8XOC5Mc9scAB4AybIIENQbglQfyD/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1345&amp;bt=1345&amp;cs=0&amp;ds=4&amp;ft=dqY4KGCi0071rEvjVQLAZu.7usYbh-Gmaglc&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ODo8ZWQ1NWhpOGc1M2VnPEBpM3Y2cWc6ZjhqbjMzNGkzM0BfMmNiNS1iNjUxMl9eXmI1YSNiZW1wcjRvLnBgLS1kLWFzcw%3D%3D&amp;btag=e00020000&amp;cc=1f&amp;dy_q=1699410528&amp;feature_id=46a7bb47b4fd1280f3d3825bf2b29388&amp;l=2023110810284816658316624F99869D5F', '[DLPanda.com][如花一支花]7293861817699405110.mp4');
+            downVideo('//v26-web.douyinvod.com/7de621a35fff4b5423c062f24433071d/654bad25/video/tos/cn/tos-cn-ve-15c001-alinc2/7bd7faaa22cf44b6bb46f41e92272297/?a=6383&amp;ch=26&amp;cr=3&amp;dr=0&amp;lr=all&amp;cd=0%7C0%7C0%7C3&amp;cv=1&amp;br=1140&amp;bt=1140&amp;cs=0&amp;ds=4&amp;ft=.6JO5.yygZmo0P3bvVwkVQHkfOYHKJd.&amp;mime_type=video_mp4&amp;qs=0&amp;rc=ZWdlZmk5ZGlkPDU5NDs3O0BpM3EzOzM6Zmg4PDMzNGkzM0BfNDEyNi9fXzYxYl5fNF8vYSMyaC9scjRvLTZgLS1kLS9zcw%3D%3D&amp;btag=e00018000&amp;dy_q=1699454708&amp;l=20231108224508E26B1B2E748B031FD9F6', '[DLPanda.com][小杰（影视混剪）]7084815753421098247.mp4');
         });
         $("#download-music-btn").on('click', function () {
             $(this).text('下载中...').attr('disabled', 'disabled');
@@ -827,7 +827,7 @@ All rights reserved by
             setTimeout(function () {
                 btn.text('下载音频').removeAttr('disabled');
             }, 30000);
-            downVideo('https://sf3-cdn-tos.douyinstatic.com/obj/ies-music/7293861884059044645.mp3', '[DLPanda.com]7293861886479223602.mp3');
+            downVideo('', '[DLPanda.com]7023043906287699981.mp3');
         });
 
         function downVideo (url, name){
@@ -983,5 +983,5 @@ All rights reserved by
         modal.css("display", "block");
     }
 </script>
-<script>(function(){var js = "window['__CF$cv$params']={r:'822a626dfa270ffb',t:'MTY5OTQxMDUyOC45OTIwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+<script>(function(){var js = "window['__CF$cv$params']={r:'822e990e1c320462',t:'MTY5OTQ1NDcwOS41MzAwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
 </html>

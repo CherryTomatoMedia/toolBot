@@ -1,5 +1,5 @@
 from anyio import open_file
-from nonebot import on_command
+from nonebot import on_command, logger
 from nonebot.matcher import Matcher
 from nonebot.params import CommandArg,  ArgStr
 from nonebot.adapters.telegram import Bot, Message
@@ -8,10 +8,11 @@ from nonebot.adapters.telegram.event import MessageEvent
 from . import douyin
 
 
-duoyin_matcher = on_command("douyin",aliases={"dy"})
+duoyin_matcher = on_command("douyin", aliases={"dy"})
 @duoyin_matcher.handle()
-async def cookieUploadPre(bot: Bot, matcher: Matcher, args: Message = CommandArg()):
+async def cookieUploadPre(bot: Bot, event: MessageEvent, matcher: Matcher, args: Message = CommandArg()):
     raw = args.extract_plain_text().strip()
+    raw = raw.replace("@cherryTomatoTool_bot", "")
     if raw != '':
         matcher.set_arg("arg", raw)
 
